@@ -1,0 +1,14 @@
+<template name="debug">
+    {{#if debugMode}}
+        <div class="debug">
+            <table>
+                {{#each sessions}}
+                    <tr>
+                        <td>{{key}}:</td>
+                        <td><input type="text" id="textfield_{{key}}" placeholder="{{key}}" value="{{value}}"></td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    {{/if}}
+</template>

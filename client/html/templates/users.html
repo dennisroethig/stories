@@ -1,0 +1,13 @@
+<template name="users">
+    {{#if debugMode}}
+        <table class="users">
+            {{#each allUsers}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{device1}}</td>
+                    <td>{{device2}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    {{/if}}
+</template>
