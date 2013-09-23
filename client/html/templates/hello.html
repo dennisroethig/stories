@@ -14,19 +14,15 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-xs-2">
-                                Name:
-                            </div>
-                            <div class="col-xs-7">
+                            <div class="col-xs-8 col-md-10">
                                 <input type="text" class="user_name" placeholder="Name" value="{{userName}}">
                             </div>
-                            <div class="col-xs-3">
-                                <button type="button" class="btn btn-primary">Save</button>
+                            <div class="col-xs-4 col-md-2">
+                                <button type="button" class="btn btn-primary btn-block">Save</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary">QR Code</button>
             {{else}}
                 <blockquote>
                     <p>
@@ -37,7 +33,7 @@
             {{/if}}
 
             {{#if isConnected}}
-                <h2>Hello {{userName}}</h2>
+                <h2>Hello {{userName}} <button type="button" class="btn btn-primary">Continue</button> </h2>
             {{/if}}
 
         </div>

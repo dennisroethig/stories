@@ -31,7 +31,8 @@ function setNewUser () {
             created: (new Date()).getTime(),
             name: false,
             device1: deviceID,
-            device2: false
+            device2: false,
+            videoTime: 0
         });
 
     Session.set('status', 'new');
@@ -60,6 +61,7 @@ function connectSecondDevice (connectID, counter) {
             }
         });
 
+        Session.set('userID', user._id);
         Session.set('userName', user.name);
         Session.set('connected', true);
 
@@ -77,7 +79,7 @@ function connectSecondDevice (connectID, counter) {
 
 }
 
-onYouTubePlayerReady = function (playerId) {
-    ytplayer = document.getElementById("videoplayer");
-    console.log('ready', playerId);
-}
+// onYouTubePlayerReady = function (playerId) {
+//     ytplayer = document.getElementById("videoplayer");
+//     console.log('ready', playerId);
+// }
